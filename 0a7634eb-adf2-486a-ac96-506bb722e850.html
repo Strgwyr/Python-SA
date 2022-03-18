@@ -1,0 +1,71 @@
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+  extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  }
+});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+.x {
+  background-color: lightgrey;
+  border: 10px solid green;
+}
+.y {
+  background-color: lightyellow;
+  border: 5px solid black;
+}
+.z {
+  background-color: lightpink;
+  border: 5px solid red;
+}
+.tele {
+  background-color: yellow;
+  border: 5px solid red;
+}
+</style>
+<a href="http://t.me/cheggHAC"><div class=tele><center><h3>CLICK HERE TO GET MORE FREE SOLUTIONS</h3></center></div></a>
+<div class="x">
+<div class="styles__MyQuestionContainer-sc-1fepi3e-3 jwwHZl"><div class="styles__MyQuestionText-sc-1fepi3e-4 ccZQXt"><p>Lottery (Use Python)</p>
+<p>Write a program which accepts a series of lottery number inputs from the user and determines how much the user won.</p>
+<p>PROGRAM DESIGN</p>
+<p>The program should be able to accept a series of lottery numbers from the user. Lottery numbers should be unique and have no duplicates. Solve this problem using loops and sequences. There should be six (6) unique lottery numbers involved. If the user entered six numbers, these numbers should be compared to a set containing the winning sequence of numbers – the number ordering doesn’t matter in the comparison. For each winning number, 100 pesos is won by the user. The winning set of numbers is { 10, 11, 8, 1, 5, 20 }.</p>
+<p>INPUT</p>
+<p>The input consists of a single line input that contains 1.) the name of the user, 2.) six numbers separated by spaces. The name of the user is a string. The six subsequent numbers should be typecasted as integers later in the code.</p>
+<p>OUTPUT</p>
+<p>Once the user enters the input, the program should be able to traverse through the numbers and determine how many winning numbers the user has betted on / entered. The user should enter 6 numbers.<br/>If the total number of numbers exceeds 6 or is less than 6, the error message “Should be 6 numbers” should be displayed. Otherwise, If the user won at least one winning number the message “User won prizemoney pesos!” – where User is the name of the user, and prizemoney is the total winning numbers times 100. If the user did not win any winning number, the message “User won nothing!” should be displayed instead. Please note that all entered numbers must be unique – with no duplicates. If duplicates<br/>were encountered, the error message “No Duplicates” should be displayed.</p>
+<p>SAMPLE INPUT</p>
+<p>Ely 1 8 10 27 12 15 <br/>Buddy 1 8 27 3 4 9<br/>Raims 9 4 3 12 15 21<br/>Makoy 1 1 8 10 27 15<br/>Nitoy 1<br/>Jugs 1 1 1 1 1 1 1</p>
+<p>SAMPLE OUTPUT</p>
+<p>Ely won 300 pesos!<br/>Buddy won 200 pesos!<br/>Raims won nothing!<br/>No Duplicates<br/>Should be 6 numbers<br/>Should be 6 numbers</p></div></div></div></div><h1><p><b>
+<mark>:: Solution ::</mark>
+</b></p></h1><div class="y"><div class="styles__MyAnswerStepsContainer-sc-1fepi3e-8 emlCKd"><i aria-hidden="true" class="Icon__IconStyledComponent-sc-kxi3sy-0 hcTcBi styles__StepperIcon-sc-1fepi3e-7 dZJgAx material-icons">arrow_forward</i><div class="styles__MyAnswerStepContainer-sc-1fepi3e-0 epJeqA"><div class="styles__MyAnswerStepNumber-sc-1fepi3e-1 ksdzIR">Step 1</div><div class="styles__MyAnswerStepText-sc-1fepi3e-2 bBFtuv"><div>
+<div>#python code</div>
+<div>winning_set=[ 10, 11, 8, 1, 5, 20 ]</div>
+<div>a=list(input().split())</div>
+<div>d={}</div>
+<div>winning_number=0</div>
+<div>f=1</div>
+<div>if(len(a)==7):</div>
+<div>    for i in range(1,7):</div>
+<div>        if int(a[i]) in d:</div>
+<div>            f=0</div>
+<div>            break</div>
+<div>        else:</div>
+<div>            d[int(a[i])]=1</div>
+<div>        if(int(a[i]) in winning_set):</div>
+<div>            winning_number+=100</div>
+<div>    if f:</div>
+<div>        if winning_number!=0:</div>
+<div>            print(a[0],"wons",winning_number,"pesos!")</div>
+<div>        else:</div>
+<div>            print(a[0],"won nothing!")</div>
+<div>    else:</div>
+<div>        print("No Duplicates")</div>
+<div>else:</div>
+<div>    print("Should be 6 numbers")</div>
+</div></div></div></div><div class="z"><h2><p><b>
+Likes: 0</p><p>Dislikes:  0
+</b></p></h2></div>

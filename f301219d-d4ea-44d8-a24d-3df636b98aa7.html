@@ -1,0 +1,118 @@
+
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+  extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  }
+});</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+.x {
+  background-color: lightgrey;
+  border: 10px solid green;
+}
+.y {
+  background-color: lightyellow;
+  border: 5px solid black;
+}
+.z {
+  background-color: lightpink;
+  border: 5px solid red;
+}
+.tele {
+  background-color: yellow;
+  border: 5px solid red;
+}
+</style>
+<a href="http://t.me/cheggHAC"><div class=tele><center><h3>CLICK HERE TO GET MORE FREE SOLUTIONS</h3></center></div></a>
+<div class="x">
+<div class="styles__MyQuestionContainer-sc-1fepi3e-3 jwwHZl"><div class="styles__MyQuestionText-sc-1fepi3e-4 ccZQXt"><p><strong>Inside Files </strong>(Use Python)</p>
+<p>Write a program that accepts an integer input, opens a file, and analyzes what and how many types of words are there in a line within the opened file.</p>
+<p><strong>PROGRAM DESIGN</strong><br/>The program should be able to accept an integer input. This program should be able to open and read a file called tweets2.txt. The integer input represents the order of the line (from 1st to 5th line), within the tweets2.txt file. The program should be able to count how many stopwords, common words, unique words, and overall words are there in the line number input.</p>
+<p>In Natural Language Processing (NLP), stopwords are defined to be words with no meaning when left alone and with no context. For this activity, stopwords are words that are at most, 3 characters in length, with common words having more than 3 characters.</p>
+<p>Unique words are words, within the line, that don’t have any duplicates. Whereas overall words are the over all count of all words within the line.</p>
+<p>The program should also be able to filter out (remove) symbols from further processing.</p>
+<p>Required file:<br/>tweets2.txt file (See the attached photo)</p>
+<p><strong>INPUT</strong><br/>The only input entered by the user is an integer (between 1 to 5) which identifies which line number is to be analyzed by the program.</p>
+<p><strong>OUTPUT</strong><br/>Once the user runs the file, the program should be able to traverse through the tweets2 file and look for the line number indicated upon compile. Take note, that the line number is an integer from 1 to 5 only, as there are only 5 lines within the tweets2 file.</p>
+<p>Once the line number is encountered, the program should detect and count the number of stopwords, common words, unique words, and over all words. the program should be able to output a pythonic dictionary which contains the line number, and the corresponding counts of: stopwords, common words, unique words, and over all words.</p>
+<p>note: the output should be a dictionary tally of these counts.</p>
+<p>See the attached photo for sample inputs and outputs.</p></div><figure class="styles__MyQuestionImageContainer-sc-1fepi3e-11 kkTFyy"><div class="styles__MyQuestionImageInnerContainer-sc-1fepi3e-13 hIKYzm"><div class="styles__MyQuestionImageWrapper-sc-1fepi3e-15 iDhZvi" height="231"><img alt="SAMPLE
+SAMPLE OUTPUT
+INPUT
+5
+{'line': 5, 's': 10, 'c': 12, 'u': 16, 'o': 22}
+{'line': 3, 's': 5, 'c': 10, 'u': 13, 'o': 15}
+{'line': 1,
+{'line': 2,
+{'line': 4,
+1.
+'s': 8, 'c': 15, 'u': 17, 'o': 23}
+2
+'s': 6, 'c': 11, 'u': 13, 'o': 17}
+'s': 14, 'c': 9, 'u': 23, 'o': 23}
+" class="styles__MyQuestionLazyImage-sc-1fepi3e-14 GcmwH" height="231" src="" width="751"/></div><div class="styles__MyQuestionExpandButtonWrapper-sc-1fepi3e-12 jGUKld"><div class="styles__ZoomImageIconWrapper-sc-1fepi3e-20 cbZYfM"><img alt="expand button" class="styles__MyQuestionZoomImg-sc-1fepi3e-19 iEmzEk" src="/static/expand-img.svg"/></div></div></div><div class="styles__TranscribedImageWrapper-sc-1fepi3e-16 cZBoHE"><span class="styles__TranscribedImageHead-sc-1fepi3e-17 XIVyZ">Transcribed Image Text:</span><span class="styles__TranscribedImageText-sc-1fepi3e-18 hcBphD">SAMPLE
+SAMPLE OUTPUT
+INPUT
+5
+{'line': 5, 's': 10, 'c': 12, 'u': 16, 'o': 22}
+{'line': 3, 's': 5, 'c': 10, 'u': 13, 'o': 15}
+{'line': 1,
+{'line': 2,
+{'line': 4,
+1.
+'s': 8, 'c': 15, 'u': 17, 'o': 23}
+2
+'s': 6, 'c': 11, 'u': 13, 'o': 17}
+'s': 14, 'c': 9, 'u': 23, 'o': 23}
+</span></div></figure><figure class="styles__MyQuestionImageContainer-sc-1fepi3e-11 kkTFyy"><div class="styles__MyQuestionImageInnerContainer-sc-1fepi3e-13 hIKYzm"><div class="styles__MyQuestionImageWrapper-sc-1fepi3e-15 bnYkSf" height="119"><img alt="tweets2 - Notepad
+File Edit Format
+View Help
+REDACTED nagpost ng &quot;Basta May Alak May valak&quot; sa REDACTED. Ghaddd! Never knew they could do the 'thing' when they are still in.
+I love REDACTED and Fiesta and all but can REDACTED host more academic-related events besides strand days???
+One of cluster teachers namin sa REDACTED pero wala ko siya nateacher like sa class
+i will crack a raw egg on my head if REDACTED move the resumption of classes to Jan 7. im not even kidding.
+MAY MGA ESKWELAHAN TALAGA NA HINDI NAAAWA SA MGA TAGA-PROBINSIYA. HINDI KO SINASABING REDACTED TO HA PERO PARANG GANUN NA NGA HAHA
+" class="styles__MyQuestionLazyImage-sc-1fepi3e-14 drfmwH" height="119" src="" width="789"/></div><div class="styles__MyQuestionExpandButtonWrapper-sc-1fepi3e-12 jGUKld"><div class="styles__ZoomImageIconWrapper-sc-1fepi3e-20 cbZYfM"><img alt="expand button" class="styles__MyQuestionZoomImg-sc-1fepi3e-19 iEmzEk" src="/static/expand-img.svg"/></div></div></div><div class="styles__TranscribedImageWrapper-sc-1fepi3e-16 cZBoHE"><span class="styles__TranscribedImageHead-sc-1fepi3e-17 XIVyZ">Transcribed Image Text:</span><span class="styles__TranscribedImageText-sc-1fepi3e-18 hcBphD">tweets2 - Notepad
+File Edit Format
+View Help
+REDACTED nagpost ng "Basta May Alak May valak" sa REDACTED. Ghaddd! Never knew they could do the 'thing' when they are still in.
+I love REDACTED and Fiesta and all but can REDACTED host more academic-related events besides strand days???
+One of cluster teachers namin sa REDACTED pero wala ko siya nateacher like sa class
+i will crack a raw egg on my head if REDACTED move the resumption of classes to Jan 7. im not even kidding.
+MAY MGA ESKWELAHAN TALAGA NA HINDI NAAAWA SA MGA TAGA-PROBINSIYA. HINDI KO SINASABING REDACTED TO HA PERO PARANG GANUN NA NGA HAHA
+</span></div></figure></div></div></div><h1><p><b>
+<mark>:: Solution ::</mark>
+</b></p></h1><div class="y"><div class="styles__MyAnswerStepsContainer-sc-1fepi3e-8 emlCKd"><i aria-hidden="true" class="Icon__IconStyledComponent-sc-kxi3sy-0 hcTcBi styles__StepperIcon-sc-1fepi3e-7 dZJgAx material-icons">arrow_forward</i><div class="styles__MyAnswerStepContainer-sc-1fepi3e-0 epJeqA"><div class="styles__MyAnswerStepNumber-sc-1fepi3e-1 ksdzIR">Step 1</div><div class="styles__MyAnswerStepText-sc-1fepi3e-2 bBFtuv"><div>
+<div>#read input line from user</div>
+<div>n=int(input())</div>
+<div>#reading file</div>
+<div>f=open("tweets2.txt","r")</div>
+<div>s=list(f.readlines())[n-1]</div>
+<div>l=list(s.split())</div>
+<div>s=0</div>
+<div>u=0</div>
+<div>d={}</div>
+<div>for i in l:</div>
+<div>    if not i[0].isalpha():</div>
+<div>        i=i[1:]</div>
+<div>    if not i[-1].isalpha():</div>
+<div>        i=i[:-1]</div>
+<div>    if len(i)&lt;=3:</div>
+<div>        s+=1</div>
+<div>    if i in d:</div>
+<div>        d[i]+=1</div>
+<div>    else:</div>
+<div>        d[i]=1</div>
+<div>c=len(l)-s</div>
+<div>u=0</div>
+<div>for i in d:</div>
+<div>    if d[i]==1:</div>
+<div>        u+=1</div>
+<div>#printing results</div>
+<div>print({"line":n,'s':s,"c":c,"u":u,"o":len(l)})</div>
+</div></div></div></div><div class="z"><h2><p><b>
+Likes: 0</p><p>Dislikes:  0
+</b></p></h2></div>
